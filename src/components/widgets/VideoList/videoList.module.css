@@ -5,7 +5,9 @@
 	font-weight: 300;
 	font-size: 21px;
 }
-
+.videoList_wrapper a {
+	text-decoration: none;
+}
 .videoListItem_wrapper {
 	display: flex;
 	border-bottom: solid 1px #d5d5d5;
@@ -15,6 +17,7 @@
 	font-size: 13px;
 	color: #525252;
 }
+
 .left {
 	background-size: cover !important;
 }

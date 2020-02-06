@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import styles from './videoList.css';
-import { Link } from 'react-router-dom';
-import CardInfo from '../CardInfo/cardinfo';
+import styles from "./videoList.module.css";
+import { Link } from "react-router-dom";
+import CardInfo from "../CardInfo/cardinfo";
 
 const VideoListTemplate = props => {
 	return props.data.map((item, i) => {

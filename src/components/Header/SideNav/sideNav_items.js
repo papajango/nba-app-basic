@@ -1,39 +1,39 @@
-import React from 'react';
-import style from './sideNav.css';
-import FontAwesome from 'react-fontawesome';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styles from "./sideNav.module.css";
+import FontAwesome from "react-fontawesome";
+import { Link } from "react-router-dom";
 
 const SideNavItems = () => {
 	const items = [
 		{
-			type: style.option,
-			icon: 'home',
-			text: 'Home',
-			link: '/'
+			type: styles.option,
+			icon: "home",
+			text: "Home",
+			link: "/"
 		},
 		{
-			type: style.option,
-			icon: 'file-text-o',
-			text: 'News',
-			link: '/news'
+			type: styles.option,
+			icon: "file-text-o",
+			text: "News",
+			link: "/news"
 		},
 		{
-			type: style.option,
-			icon: 'play',
-			text: 'Videos',
-			link: '/videos'
+			type: styles.option,
+			icon: "play",
+			text: "Videos",
+			link: "/videos"
 		},
 		{
-			type: style.option,
-			icon: 'sign-in',
-			text: 'Sign in',
-			link: '/sign-in'
+			type: styles.option,
+			icon: "sign-in",
+			text: "Sign in",
+			link: "/sign-in"
 		},
 		{
-			type: style.option,
-			icon: 'sign-out',
-			text: 'Sign out',
-			link: '/sign-out'
+			type: styles.option,
+			icon: "sign-out",
+			text: "Sign out",
+			link: "/sign-out"
 		}
 	];
 

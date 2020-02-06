@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import SliderTemplates from './slider_templates';
-import { URL } from '../../../config';
+import React, { Component } from "react";
+import axios from "axios";
+import SliderTemplates from "./slider_templates";
+import { URL } from "../../../config";
 
 class NewsSlider extends Component {
 	state = {

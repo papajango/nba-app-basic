@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { URL } from '../../../config';
-import styles from './newslist.css';
-import Buttons from '../Buttons/buttons';
-import CardInfo from '../CardInfo/cardinfo';
+import React, { Component } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { URL } from "../../../config";
+import styles from "./newslist.module.css";
+import Buttons from "../Buttons/buttons";
+import CardInfo from "../CardInfo/cardinfo";
 
 class NewsList extends Component {
 	state = {
@@ -46,13 +46,13 @@ class NewsList extends Component {
 	renderNews(type) {
 		let template = null;
 		switch (type) {
-			case 'card':
+			case "card":
 				template = this.state.items.map((item, i) => {
 					return (
 						<CSSTransition
 							classNames={{
-								enter: 'newslist_wrapper',
-								enterActive: 'newslist_wrapper_entered'
+								enter: "newslist_wrapper",
+								enterActive: "newslist_wrapper_entered"
 							}}
 							timeout={500}
 							key={i}
@@ -67,6 +67,42 @@ class NewsList extends Component {
 									<h2>{item.title}</h2>
 								</Link>
 							</div>
+						</CSSTransition>
+					);
+				});
+				break;
+
+			case "cardMain":
+				template = this.state.items.map((item, i) => {
+					return (
+						<CSSTransition
+							classNames={{
+								enter: "newslist_wrapper",
+								enterActive: "newslist_wrapper_entered"
+							}}
+							timeout={500}
+							key={i}
+						>
+							<Link to={`/articles/${item.id}`}>
+								<div className={styles.flex_wrapper}>
+									<div
+										className={styles.left}
+										style={{
+											background: `url(/images/articles/${item.image})`
+										}}
+									>
+										<div></div>
+									</div>
+									<div className={styles.right}>
+										<CardInfo
+											teams={this.state.teams}
+											team={item.team}
+											date={item.date}
+										/>
+										<h2>{item.title}</h2>
+									</div>
+								</div>
+							</Link>
 						</CSSTransition>
 					);
 				});

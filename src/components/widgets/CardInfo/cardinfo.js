@@ -1,6 +1,6 @@
-import React from 'react';
-import FontAwesome from 'react-fontawesome';
-import styles from './cardinfo.css';
+import React from "react";
+import FontAwesome from "react-fontawesome";
+import styles from "./cardinfo.module.css";
 
 const CardInfo = props => {
 	const teamName = (teams, team) => {

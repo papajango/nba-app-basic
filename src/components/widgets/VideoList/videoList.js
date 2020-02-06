@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import styles from './videoList.css';
-import Button from '../Buttons/buttons';
-import VideoListTemplate from './videoListTemplate';
-import { URL } from '../../../config';
+import React, { Component } from "react";
+import axios from "axios";
+import styles from "./videoList.module.css";
+import Button from "../Buttons/buttons";
+import VideoListTemplate from "./videoListTemplate";
+import { URL } from "../../../config";
 
 class VideoList extends Component {
 	state = {
@@ -48,7 +48,7 @@ class VideoList extends Component {
 	renderVideos = () => {
 		let template = null;
 		switch (this.props.type) {
-			case 'card':
+			case "card":
 				template = (
 					<VideoListTemplate
 						data={this.state.videos}

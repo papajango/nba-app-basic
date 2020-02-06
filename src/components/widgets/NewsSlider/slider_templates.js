@@ -1,7 +1,7 @@
-import React from 'react';
-import Slick from 'react-slick';
-import styles from './slider.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Slick from "react-slick";
+import styles from "./slider.module.css";
+import { Link } from "react-router-dom";
 
 const SliderTemplates = props => {
 	const settings = {
@@ -15,7 +15,7 @@ const SliderTemplates = props => {
 	};
 	let template = null;
 	switch (props.type) {
-		case 'featured':
+		case "featured":
 			template = props.data.map((item, i) => {
 				return (
 					<div key={i}>

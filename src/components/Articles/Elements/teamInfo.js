@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../articles.css';
+import React from "react";
+import styles from "../articles.module.css";
 
 const TeamInfo = props => {
 	return (

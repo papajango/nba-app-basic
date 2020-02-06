@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import { URL } from '../../../../config';
-import styles from '../../articles.css';
-import Header from './header';
-import VideoRelated from '../../../widgets/VideoList/VideoRelated/videoRelated';
+import React, { Component } from "react";
+import axios from "axios";
+import { URL } from "../../../../config";
+import styles from "../../articles.module.css";
+import Header from "./header";
+import VideoRelated from "../../../Widgets/VideoList/VideoRelated/videoRelated";
 
 class VideoArticle extends Component {
 	state = {

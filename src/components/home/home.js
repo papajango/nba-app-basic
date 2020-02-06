@@ -1,7 +1,7 @@
-import React from 'react';
-import NewsSlider from '../widgets/NewsSlider/slider';
-import NewsList from '../widgets/NewsList/newslist';
-import VideoList from '../widgets/VideoList/videoList';
+import React from "react";
+import NewsSlider from "../Widgets/NewsSlider/slider";
+import NewsList from "../Widgets/NewsList/newslist";
+import VideoList from "../Widgets/VideoList/videoList";
 const Home = () => {
 	return (
 		<div>

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import { URL } from '../../../../config';
-import styles from '../../articles.css';
-import Header from './header';
+import React, { Component } from "react";
+import axios from "axios";
+import { URL } from "../../../../config";
+import styles from "../../articles.module.css";
+import Header from "./header";
 
 class NewsArticles extends Component {
 	state = {
